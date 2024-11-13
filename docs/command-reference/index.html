@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+        <img src="/assets/2024-11-06_sf_logo_512x512.png" alt="Semantic Flow" width="128">Command Reference
+    </div>
+    <div id="nav">
+        <a href="/index.html">Overview</a> | <a href="/getting-started/">Getting Started</a> | <a href="/command-reference/">Command Reference</a>
+    </div>
+    <div id="content">
+
+    <h2>repo Commands</h2>
+<h3>repo init</h3>
+<ul>
+<li>initializes a SFDataRepo for a repository directory that already exists in the local filesystem
+<ul>
+<li>uses current directory if nothing else specified</li>
+<li>warns if the directory doesn't appear to be a Git repo</li>
+<li>creates:
+<ul>
+<li>minimal sflow-config.jsonld</li>
+<li>default template</li>
+<li>recommended directory structure:</li>
+<li>populates touchstone and catalog dataset series for the namespace</li>
+</ul>
+</li>
+<li>safe to use on existing SFDataRepos</li>
+</ul>
+</li>
+<li>allows the --site-root option to specify a URL for the repo namespace, i.e., where the site will live
+<ul>
+<li>if not provided, <code>sflow</code> will attempt to infer it from</li>
+</ul>
+</li>
+</ul>
+<h4>Examples</h4>
+<h3>repo new</h3>
+<h3>repo verify</h3>
+<h3>repo evolve</h3>
+<h3>repo scan</h3>
+<h3>repo serve</h3>
+<h3>repo publish</h3>
+<h3>repo status</h3>
+<h2>resource Commands</h2>
+<h3>entity new</h3>
+<h3>entity delete</h3>
+<h3>entity alias</h3>
+<h3>entity verify</h3>
+<h3>entity evolve</h3>
+<h3>entity publish</h3>
+<h3>entity status</h3>
+<h2>template Commands</h2>
+<h3>template create</h3>
+<h3>template list</h3>
+<h3>template assign</h3>
+
+
+    </div>
+    © 2024 David Richardson
+    <time>created: 2024-11-10</time>
+  
+</body></html>
